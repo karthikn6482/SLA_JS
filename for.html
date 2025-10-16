@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            console.log("Iteration: " + i);
+        }
+        for (let j = 5; j > 0; j--) {
+            console.log("Countdown: " + j);
+        }
+        for (let k = 0; k <= 10; k += 2) {
+            console.log("Even number: " + k);
+        }
+        for (let m = 1; m <= 10; m += 2) {
+            console.log("Odd number: " + m);
+        }
+        for (let n = 1; n <= 5; n++) {
+            console.log("Square of " + n + " is " + (n * n));
+        }
+        for (let p = 1; p <= 5; p++) {
+            console.log("Cube of " + p + " is " + (p * p * p));
+        }
+        for (let q = 1; q <= 10; q++) {
+            if (q % 2 === 0) {
+                console.log(q + " is even");
+            } else {
+                console.log(q + " is odd");
+            }
+        }
+        for (let a=1; a<=9; a++) {
+            console.log("Multiplication table of " + a);
+            for (let b=1; b<=10; b++) {
+                console.log(a + " x " + b + " = " + (a * b));
+            }
+        }
+        for (let r = 10; r >= 1; r--) {
+            if (r % 3 === 0) {
+                console.log(r + " is divisible by 3");
+            } else {
+                console.log(r + " is not divisible by 3");
+            }
+        }
+        for (let s = 1; s <= 20; s++) {
+            if (s % 5 === 0) {
+                console.log(s + " is divisible by 5");
+            } else {
+                console.log(s + " is not divisible by 5");
+            }
+        }
+    </script>
+</body>
+</html>

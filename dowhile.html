@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowhile Loop</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        do {
+            console.log("Iteration: " + i);
+            i++;
+        } while (i < 5);
+        
+        let j = 5;
+        do {
+            console.log("Countdown: " + j);
+            j--;
+        } while (j > 0);
+        
+        let k = 0;
+        do {
+            console.log("Even number: " + k);
+            k += 2;
+        } while (k <= 10);
+        
+        let m = 1;
+        do {
+            console.log("Odd number: " + m);
+            m += 2;
+        } while (m <= 10);
+        
+        let n = 1;
+        do {
+            console.log("Square of " + n + " is " + (n * n));
+            n++;
+        } while (n <= 5);
+        
+        let p = 1;
+        do {
+            console.log("Cube of " + p + " is " + (p * p * p));
+            p++;
+        } while (p <= 5);
+        
+        let q = 1;
+        do {
+            if (q % 2 === 0) {
+                console.log(q + " is even");
+            } else {
+                console.log(q + " is odd");
+            }
+            q++;
+        } while (q <= 10);
+        
+        let a = 1;
+        do {
+            console.log("Multiplication table of " + a);
+            let b = 1;
+            do {
+                console.log(a + " x " + b + " = " + (a * b));
+                b++;
+            } while (b <= 10);
+            a++;
+        } while (a <= 9);
+        
+        let r = 10;
+        do {
+            if (r % 3 === 0) {
+                console.log(r + " is divisible by 3");
+            } else {
+                console.log(r + " is not divisible by 3");
+            }
+            r--;
+        } while (r >= 1);
+        
+        let s = 1;
+        do {
+            if (s % 5 === 0) {
+                console.log(s + " is divisible by 5");
+            } else {
+                console.log(s + " is not divisible by 5");
+            }
+            s++;
+        } while (s <= 20);
+    </script>
+</body>
+</html>
