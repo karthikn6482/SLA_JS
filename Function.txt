@@ -1,0 +1,173 @@
+Function expression
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <script>
+        const add = function(x, y) {
+            return x + y;
+        };
+        console.log("Addition: " + add(5, 3));
+
+        const subtract = function(x, y) {
+            return x - y;
+        };
+        console.log("Subtraction: " + subtract(10, 4));
+
+        const multiply = function(x, y) {
+            return x * y;
+        };
+        console.log("Multiplication: " + multiply(6, 7));
+
+        const divide = function(x, y) {
+            return x / y;
+        };
+        console.log("Division: " + divide(20, 5));
+
+        const square = function(x) {
+            return x * x;
+        };
+        console.log("Square: " + square(9));
+
+        const cube = function(x) {
+            return x * x * x;
+        };
+        console.log("Cube: " + cube(3));
+
+        const power = function(base, exponent) {
+            return Math.pow(base, exponent);
+        };
+        console.log("Power: " + power(2, 4));
+
+        const modulus = function(x, y) {
+            return x % y;
+        };
+        console.log("Modulus: " + modulus(10, 3));
+    </script>
+</body>
+</html>
+function declaration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration</title>
+</head>
+<body>
+    <script>
+        function add(x, y) {
+            return x + y;
+        }
+        console.log("Addition: " + add(5, 3));
+
+        function subtract(x, y) {
+            return x - y;
+        }
+        console.log("Subtraction: " + subtract(10, 4));
+
+        function multiply(x, y) {
+            return x * y;
+        }
+        console.log("Multiplication: " + multiply(6, 7));
+
+        function divide(x, y) {
+            return x / y;
+        }
+        console.log("Division: " + divide(20, 5));
+
+        function square(x) {
+            return x * x;
+        }
+        console.log("Square: " + square(9));
+
+        function cube(x) {
+            return x * x * x;
+        }
+        console.log("Cube: " + cube(3));
+
+        function power(base, exponent) {
+            return Math.pow(base, exponent);
+        }
+        console.log("Power: " + power(2, 4));
+
+        function modulus(x, y) {
+            return x % y;
+        }
+        console.log("Modulus: " + modulus(10, 3));
+    </script>
+</body>
+</html>
+Function arrow
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 arrow functions</title>
+</head>
+<body>
+    <script>
+        const add = (x, y) => x + y;
+        console.log("Addition: " + add(5, 3));
+
+        const subtract = (x, y) => x - y;
+        console.log("Subtraction: " + subtract(10, 4));
+
+        const multiply = (x, y) => x * y;
+        console.log("Multiplication: " + multiply(6, 7));
+
+        const divide = (x, y) => x / y;
+        console.log("Division: " + divide(20, 5));
+
+        const square = x => x * x;
+        console.log("Square: " + square(9));
+
+        const cube = x => x * x * x;
+        console.log("Cube: " + cube(3));
+
+        const power = (base, exponent) => Math.pow(base, exponent);
+        console.log("Power: " + power(2, 4));
+
+        const modulus = (x, y) => x % y;
+        console.log("Modulus: " + modulus(10, 3));
+
+        const greet = name => `Hello, ${name}!`;
+        console.log(greet("Alice"));
+
+        const isEven = number => number % 2 === 0;
+        console.log("Is 4 even? " + isEven(4));
+
+        const isOdd = number => number % 2 !== 0;
+        console.log("Is 5 odd? " + isOdd(5));
+        
+        const factorial = n => n <= 1 ? 1 : n * factorial(n - 1);
+        console.log("Factorial of 5: " + factorial(5));
+        
+        const fibonacci = n => n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+        console.log("Fibonacci of 6: " + fibonacci(6));
+        
+        const max = (a, b) => (a > b ? a : b);
+        console.log("Max of 10 and 20: " + max(10, 20));
+
+        const min = (a, b) => (a < b ? a : b);
+        console.log("Min of 10 and 20: " + min(10, 20));
+
+        const average = (a, b) => (a + b) / 2;
+        console.log("Average of 10 and 20: " + average(10,20));
+
+        const squareRoot = x => Math.sqrt(x);
+        console.log("Square root of 16: " + squareRoot(16));
+
+        const cubeRoot = x => Math.cbrt(x);
+        console.log("Cube root of 27: " + cubeRoot(27));
+
+        const toUpperCase = str => str.toUpperCase();
+        console.log(toUpperCase("hello"));
+    </script>
+</body>
+</html>
