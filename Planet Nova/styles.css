@@ -1,0 +1,65 @@
+.contact-page {
+  background: linear-gradient(135deg, #000428, #004e92);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #ff00c8, #00eaff, #0077ff);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  box-shadow: 0 0 40px rgba(0, 234, 255, 0.5);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.contact-card .form-control {
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.contact-card .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-card .form-control:focus {
+  box-shadow: 0 0 10px #00eaff;
+  outline: none;
+}
+
+.contact-card .btn-discover {
+  width: 100%;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  border-top: 1px solid #111;
+}
+
+footer p {
+  margin: 0;
+  color: #aaa;
+}
