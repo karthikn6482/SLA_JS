@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+
+// Task 1
+
+    let numbers = [10, 20, 30, 40, 50];
+    let total = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+    }
+    let average = total / numbers.length;
+    console.log("Numbers:", numbers);
+    console.log("Total:", total);
+    console.log("Average:", average);
+    console.log("Square of each number:");
+    for (let i = 0; i < numbers.length; i++) {
+      console.log(numbers[i] ** 2);
+    }
+
+
+
+// Task 2
+
+    let fruits = ["Apple", "Banana", "Mango", "Grapes"];
+    for (let i = 0; i < fruits.length; i++) {
+        console.log("Fruit " + (i + 1) + ": " + fruits[i]);
+    }
+
+
+
+// Task 3
+
+    for (let i = 1; i <= 3; i++) {
+        for (let j = 1; j <= 3; j++) {
+            console.log("i =", i, ", j =", j);
+        }
+    }
+
+
+    </script>
+</body>
+</html>
