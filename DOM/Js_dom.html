@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Read and Write</title>
+</head>
+<body>
+    <h2 id="title">Welcome to My Page</h2>
+    <input type="text" id="nameBox" value="Karthikeyan">
+    <script>
+        let heading = document.getElementById("title").innerText;
+        console.log("Heading:", heading);
+    
+        let inputValue = document.getElementById("nameBox").value;
+        console.log("Input Value:", inputValue);
+
+        document.getElementById("title").innerText = "Hello, " + inputValue + "!";
+
+        document.getElementById("nameBox").value = "Updated Name";
+    </script>
+</body>
+</html>
