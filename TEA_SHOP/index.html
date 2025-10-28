@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Shop UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="banner">☕ Welcome to Chai & Chill Tea Shop 🍵</h1>
+
+  <button id="menu" class="main-btn">Available Products</button>
+
+  <div id="categories">
+    <button id="tea" class="cat-btn">Tea</button>
+    <div id="tea_list" class="item-list">
+      <button id="green_tea" class="item-btn">Green Tea</button>
+      <button id="ginger_tea" class="item-btn">Ginger Tea</button>
+    </div>
+
+    <button id="coffee" class="cat-btn">Coffee</button>
+    <div id="coffee_list" class="item-list">
+      <button id="cold_coffee" class="item-btn">Cold Coffee</button>
+      <button id="hot_coffee" class="item-btn">Hot Coffee</button>
+    </div>
+
+    <button id="juice" class="cat-btn">Juice</button>
+    <div id="juice_list" class="item-list">
+      <button id="apple_juice" class="item-btn">Apple Juice</button>
+      <button id="orange_juice" class="item-btn">Orange Juice</button>
+    </div>
+  </div>
+
+  <div class="order-section">
+    <h2 id="order_title"></h2>
+    <img id="order_image" alt="Order Item" class="order-img">
+    <p id="bill"></p>
+    <button id="payment" class="action-btn">Make Payment</button>
+    <button id="cancel" class="cancel-btn">Cancel Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
