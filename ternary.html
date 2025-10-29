@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <script>
+        const age = 20;
+        const isAdult = age >= 18 ? "You are an adult." : "You are a minor.";
+        console.log(isAdult);
+
+        const score = 85;
+        const grade = score >= 90 ? "A" :
+                      score >= 80 ? "B" :
+                      score >= 70 ? "C" :
+                      score >= 60 ? "D" : "F";
+        console.log(`Your grade is: ${grade}`);
+
+        const access = age >= 18 ? true : false;
+        console.log(`Access granted: ${access}`);
+
+        const number = 10;
+        const parity = number % 2 === 0 ? "even" : "odd";
+        console.log(`The number ${number} is ${parity}.`);
+
+        const temperature = 30;
+        const weather = temperature > 25 ? "It's hot outside." : "It's cold outside.";
+        console.log(weather);
+
+        const day = "Saturday";
+        const activity = day === "Saturday" || day === "Sunday" ? "It's the weekend!" : "It's a weekday.";
+        console.log(activity);
+
+        const loggedIn = false;
+        const message = loggedIn ? "Welcome back!" : "Please log in.";
+        console.log(message);
+
+        const speed = 75;
+        const speedStatus = speed > 60 ? "You are speeding!" : "You are within the speed limit.";
+        console.log(speedStatus);
+    </script>
+</body>
+</html>

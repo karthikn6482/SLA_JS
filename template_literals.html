@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template literals</title>
+</head>
+<body>
+    <script>
+        const name = "John";
+        const age = 30;
+        const city = "New York";
+
+        const message = `Hello, my name is ${name}. I am ${age} years old and I live in ${city}.`;
+        const greeting = `Welcome to ${city}, ${name}!`;
+        const ageMessage = `Next year, I will be ${age + 1} years old.`;
+        const complexCalculation = `In five years, I will be ${age + 5} years old.`;
+        console.log(message);
+        console.log(greeting);
+        console.log(ageMessage);
+        console.log(complexCalculation);
+
+        const multiLineMessage = `This is a message that spans multiple lines.
+                                  It preserves the line breaks and spacing.`;
+        console.log(multiLineMessage);
+
+        const calculateSum = (a, b) => a + b;
+        const sumMessage = `The sum of 5 and 10 is ${calculateSum(5, 10)}.`;
+        console.log(sumMessage);
+
+        const villain = {
+            name: "Dr. Evil",
+            plan: "take over the world"
+        };
+        const villainMessage = `The villain ${villain.name} has a plan to ${villain.plan}.`;
+        console.log(villainMessage);
+    </script>
+</body>
+</html>
