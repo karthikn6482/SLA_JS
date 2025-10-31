@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+  }
+  
+  .container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    width: 360px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #185a9d;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid #43cea2;
+    background: #f8f9fa;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #185a9d;
+    box-shadow: 0 0 8px rgba(24, 90, 157, 0.4);
+    background: #fff;
+  }
+  
+  select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23185a9d' height='18' width='18' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(24, 90, 157, 0.4);
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #185a9d, #43cea2);
+    box-shadow: 0 4px 15px rgba(24, 90, 157, 0.6);
+  }
+  
+  #error {
+    margin-top: 12px;
+    color: #d63031;
+    font-weight: 500;
+    font-size: 14px;
+    background: #ffeaea;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

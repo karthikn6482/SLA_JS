@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Personal Form</h2>
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Enter your name" /><br />
+      <input type="email" id="email" placeholder="Enter your email" /><br />
+      <input type="password" id="password" placeholder="Enter password Must 9 character" /><br />
+      <input type="number" id="age" placeholder="Enter your age only 18+" /><br />
+      <input type="text" id="mobile" placeholder="Enter mobile number" /><br />
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br />
+      <textarea id="about" placeholder="Write about yourself (min 20 chars)"></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="error"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
