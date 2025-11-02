@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+            }
+
+            haveBirthday() {
+                this.age += 1;
+                return `Happy birthday ${this.name}! You are now ${this.age} years old.`;
+            }
+        }
+
+        const alice = new Person("Alice", 30);
+        console.log(alice.greet());
+        console.log(alice.haveBirthday());
+        console.log(alice.greet());
+    </script>
+</body>
+</html>

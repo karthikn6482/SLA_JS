@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+
+        const add = function(a, b) {
+            return a + b;
+        };
+        const addArrow = (a, b) => a + b;
+        console.log("Traditional Function Result:", addTraditional(2, 3));
+        console.log("Arrow Function Result:", addArrow(2, 3));
+
+        const square = function(x) {
+            return x * x;
+        };
+        const squareArrow = x => x * x;
+        console.log("Traditional Square Result:", squareTraditional(4));
+        console.log("Arrow Square Result:", squareArrow(4));
+
+        const greet = function() {
+            return "Hello!";
+        };
+        const greetArrow = () => "Hello!";
+        console.log("Traditional Greet Result:", greetTraditional());
+        console.log("Arrow Greet Result:", greetArrow());
+
+        const numbers = [1, 2, 3, 4, 5];
+        const doubled = numbers.map(function(num) {
+            return num * 2;
+        });
+        const doubledArrow = numbers.map(num => num * 2);
+        console.log("Doubled with Traditional Function:", doubledTraditional);
+        console.log("Doubled with Arrow Function:", doubledArrow);
+
+        const person = {
+            name: "Alice",
+            greet: function() {
+                return "Hello, " + this.name;
+            },
+            greetArrow: () => {
+                return "Hello, " + this.name;
+            }
+        };
+        console.log("Greet Method:", person.greet());
+        console.log("Arrow Greet Method:", person.greetArrow());
+    </script>
+</body>
+</html>
