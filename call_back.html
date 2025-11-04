@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back Function</title>
+</head>
+<body>
+    <script>
+        function greet(name, callback) {
+            console.log("Hello, " + name + "!");
+            callback();
+        }
+        function farewell() {
+            console.log("Goodbye!");
+        }
+        greet("Alice", farewell);
+     
+          function task2(a, b) {
+            return new Promise((r) => r(a + b));
+          }
+          task2(3, 4).then((a) => console.log(a));
+          
+          function task3(n) {
+            return new Promise((r) => r("Hi " + n));
+          }
+          task3("Karthi").then((a) => console.log(a));
+          
+          function task4() {
+            return new Promise((r) => setTimeout(() => r("user ok"), 400));
+          }
+          task4().then((a) => console.log(a));
+          
+          function task5(a, b) {
+            return new Promise((r) => r(a * b));
+          }
+          task5(2, 5).then((a) => console.log(a));
+          
+          function task6(a) {
+            return new Promise((r) => (a >= 18 ? r("adult") : r("minor")));
+          }
+          task6(20).then((a) => console.log(a));
+          
+          function task7() {
+            return new Promise((r) => setTimeout(() => r("wait ok"), 600));
+          }
+          task7().then((a) => console.log(a));
+          
+          function task8(a, b) {
+            return new Promise((r, j) => (b === 0 ? j("err") : r(a / b)));
+          }
+          task8(10, 2)
+            .then((a) => console.log(a))
+            .catch((e) => console.log(e));
+          
+          function task9() {
+            return new Promise((r) => setTimeout(() => r(28), 800));
+          }
+          task9().then((a) => console.log(a));
+          
+          function task10(t) {
+            return new Promise((r) => r(t.toUpperCase()));
+          }
+          task10("hello").then((a) => console.log(a));
+          
+          function task11() {
+            return new Promise((r) => setTimeout(() => r("file ok"), 900));
+          }
+          task11().then((a) => console.log(a));
+          
+          function task12() {
+            return new Promise((r) => setTimeout(() => r("mail ok"), 1000));
+          }
+          task12().then((a) => console.log(a));
+          
+          function task13() {
+            return new Promise((r) => setTimeout(() => r("user1"), 500));
+          }
+          async function run13() {
+            let a = await task13();
+            console.log(a);
+          }
+          run13();
+          
+          function task14() {
+            return new Promise((r) => setTimeout(() => r(["p1", "p2"]), 500));
+          }
+          async function run14() {
+            let a = await task14();
+            console.log(a);
+          }
+          run14();
+          
+          function task15() {
+            return new Promise((r) => setTimeout(() => r(99), 400));
+          }
+          async function run15() {
+            let a = await task15();
+            console.log(a);
+          }
+          run15();
+          
+          function task16() {
+            return new Promise((r) => setTimeout(() => r("done"), 400));
+          }
+          async function run16() {
+            let a = await task16();
+            console.log(a);
+          }
+          run16();
+          
+          function task17(a, b) {
+            return new Promise((r) => r(a - b));
+          }
+          async function run17() {
+            let a = await task17(10, 3);
+            console.log(a);
+          }
+          run17();
+          
+          function task18() {
+            return new Promise((r) => setTimeout(() => r("finish"), 300));
+          }
+          async function run18() {
+            let a = await task18();
+            console.log(a);
+          }
+          run18();
+          
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise syntax .then</title>
+</head>
+<body>
+    <script>
+        function a1() {
+            return new Promise((r) => setTimeout(() => r("done1"), 300));
+          }
+          a1().then((v) => console.log(v));
+          
+          function a2(x, y) {
+            return new Promise((r) => r(x + y));
+          }
+          a2(2, 3).then((v) => console.log(v));
+          
+          function a3(n) {
+            return new Promise((r) => r("hi " + n));
+          }
+          a3("karthi").then((v) => console.log(v));
+          
+          function a4() {
+            return new Promise((r) => setTimeout(() => r("ok4"), 200));
+          }
+          a4().then((v) => console.log(v));
+          
+          function a5(x, y) {
+            return new Promise((r) => r(x * y));
+          }
+          a5(3, 5).then((v) => console.log(v));
+          
+          function a6(age) {
+            return new Promise((r) => (age >= 18 ? r("adult") : r("minor")));
+          }
+          a6(19).then((v) => console.log(v));
+          
+          function a7() {
+            return new Promise((r) => setTimeout(() => r("ok7"), 400));
+          }
+          a7().then((v) => console.log(v));
+          
+          function a8(x, y) {
+            return new Promise((r, j) => (y === 0 ? j("err") : r(x / y)));
+          }
+          a8(10, 2)
+            .then((v) => console.log(v))
+            .catch((e) => console.log(e));
+          
+          function a9() {
+            return new Promise((r) => setTimeout(() => r(28), 300));
+          }
+          a9().then((v) => console.log(v));
+          
+          function a10(t) {
+            return new Promise((r) => r(t.toUpperCase()));
+          }
+          a10("hello").then((v) => console.log(v));
+          
+          function a11() {
+            return new Promise((r) => setTimeout(() => r("data ok"), 200));
+          }
+          a11().then((v) => console.log(v));
+          
+          function a12() {
+            return new Promise((r) => setTimeout(() => r("mail ok"), 300));
+          }          
+    </script>
+</body>
+</html>
