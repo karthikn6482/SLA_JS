@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map and Filter</title>
+</head>
+<body>
+    <script>
+        let fruits = ['Apple', 'Banana', 'Cherry'];
+
+        console.log(fruits[0]);
+
+        fruits.push('Date');
+        console.log(fruits);
+
+        let lastFruit = fruits.pop();
+        console.log(lastFruit);
+        console.log(fruits);
+
+        fruits.forEach(function(fruit) {
+            console.log(fruit);
+        });
+
+        
+        let upperFruits = fruits.map(function(fruit) {
+            return fruit.toUpperCase();
+        });
+
+        console.log(upperFruits);
+
+        let filteredFruits = fruits.filter(function(fruit) {
+            return fruit.startsWith('B');
+        });
+        
+        console.log(filteredFruits);
+    </script>
+</body>
+</html>
